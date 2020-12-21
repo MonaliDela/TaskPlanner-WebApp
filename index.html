@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Task Planner Web App</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+
+        </nav>
+
+    </header>
+
+    <div class="container" style="border: 2px solid black;">
+
+        <!-- Add new task form section -->
+        <section>
+            <div class="row">
+                <div class="col-3">
+                    <!-- form left column - for design purpose - no contents -->
+                </div>
+                <div class="col-6" style="border: 2px solid red;">
+                    <form>
+                        <h4>Add New Task</h4>
+                        <div class="form-group">
+                            <label for="TaskName">Task Name</label>
+                            <input type="text" class="form-control" id="TaskName">
+                        </div>
+                        <div class="form-group">
+                            <label for="taskDescription">Description</label>
+                            <input type="text" class="form-control" id="taskDescription">
+                        </div>
+                        <div class="form-group">
+                            <label for="taskAssignTo">Assign To</label>
+                            <input type="text" class="form-control" id="taskAssignTo">
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="taskDueDate">Due Date</label>
+                                    <input type="date" class="form-control" id="taskDueDate">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="taskStatus">Status</label>
+                                    <select class="form-control" id="taskStatus">
+                                        <option>To Do</option>
+                                        <option>In progress</option>
+                                        <option>For Review</option>
+                                        <option>Done</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group centerSubmit">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                      <!-- form right column - for design purpose - no contents -->
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+    <footer>
+
+    </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

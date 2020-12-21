@@ -1,0 +1,18 @@
+/* add new task form styles */
+form {
+    margin: 3rem;
+}
+form, #taskStatus, #taskDueDate {
+    font-size: 0.8rem;
+}
+
+form h4{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.centerSubmit {
+    text-align: center;
+}
+

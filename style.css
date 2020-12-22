@@ -16,3 +16,28 @@ form h4{
     text-align: center;
 }
 
+/* task card styles */
+.card {
+    width: 14rem;
+}
+.cardbody {
+    font-size: 0.9rem;
+}
+.taskCardIcon {
+    font-size: 0.9rem;
+    padding: 0;
+}
+#statusBadge {
+    text-align: right;
+    /* margin-left: 1rem; */
+    font-size: 0.9rem;
+    background-color: rgb(243, 169, 9);
+    color: white;
+    justify-content: right;
+}
+#taskName {
+    padding: 0.7rem;
+    text-align: center;
+    background-color: wheat;
+
+}

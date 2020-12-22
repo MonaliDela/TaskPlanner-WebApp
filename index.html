@@ -29,19 +29,37 @@
                     <!-- form left column - for design purpose - no contents -->
                 </div>
                 <div class="col-6" style="border: 2px solid red;">
-                    <form>
+                    <form id="taskform">
                         <h4>Add New Task</h4>
                         <div class="form-group">
-                            <label for="TaskName">Task Name</label>
-                            <input type="text" class="form-control" id="TaskName">
+                            <label for="taskName">Task Name</label>
+                            <input type="text" class="form-control" id="taskName">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                required, and needs to be atleast 10 characters long
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="taskDescription">Description</label>
                             <input type="text" class="form-control" id="taskDescription">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                required, and needs to be atleast 15 characters long
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="taskAssignTo">Assign To</label>
                             <input type="text" class="form-control" id="taskAssignTo">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                required, and needs to be atleast 4 characters long
+                            </div>
                         </div>
 
                         <div class="row">
@@ -49,6 +67,12 @@
                                 <div class="form-group">
                                     <label for="taskDueDate">Due Date</label>
                                     <input type="date" class="form-control" id="taskDueDate">
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        select future date
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -79,39 +103,36 @@
 
         <!-- task card section -->
         <section>
-            <div>
-                <div class="card">
-                   
-                    
-                    <div id="taskName" >
-                        <span class="badge" id="statusBadge">STATUS</span>
-                        <h6 class="card-title" >TASK NAME</h6>
-                    </div>
-
-                    <div class="cardbody">
-                        <ul class="list-group list-group-flush">
-
-                            <li class="list-group-item"> testing testing testing </li>
-                            <li class="list-group-item"><strong> Assign to: </strong> Monali Dela </li>
-                            <li class="list-group-item"><strong> Due date: </strong>  date </li>
-                        </ul>
-
-                        <div class="d-flex my-2 justify-content-around">
-                            <button class="btn btn-outline-success" id="taskbtn"><i class='fas fa-check taskCardIcon'></i></button>
-                            <button class="btn btn-outline-warning"><i class='fas fa-pen taskCardIcon'></i> </button>
-                            <button class="btn btn-outline-danger"><i class='fas fa-trash taskCardIcon'></i></button> 
-                          
-
-
-
-                            
+            <div class="row taskrow">
+                <div>
+                    <div class="card">
+                        <div id="taskCardName" >
+                            <div id="statusbadgediv">
+                                <span class="badge" id="statusBadge">STATUS</span>
+                            </div>
+                            <h6 class="card-title" >TASK NAME</h6>
                         </div>
-                    </div>
-                </div> 
-
-
+    
+                        <div class="cardbody">
+                            <ul class="list-group list-group-flush">
+    
+                                <li class="list-group-item"> testing testing testing </li>
+                                <li class="list-group-item"><strong> Assign to: </strong> Monali Dela </li>
+                                <li class="list-group-item"><strong> Due date: </strong>  date </li>
+                            </ul>
+    
+                            <div class="d-flex my-2 justify-content-around">
+                                <button class="btn btn-outline-success btn-xs"><i class='fas fa-check taskCardIcon'></i></button>
+                                <button class="btn btn-outline-warning"><i class='fas fa-pen taskCardIcon'></i> </button>
+                                <button class="btn btn-outline-danger"><i class='fas fa-trash taskCardIcon'></i></button>  
+                            </div>
+                        </div>
+                    </div> 
+    
+    
+                </div>
             </div>
-
+            
         </section>
                
 
@@ -124,6 +145,8 @@
     <footer>
 
     </footer>
+    
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -42,4 +42,18 @@ taskform.addEventListener("submit", (event) => {
         taskDueDate.classList.remove("is-valid");
     }
 
+    //use TaskManager class to keep track of tasks we add with the New Task form.
+    const name = taskName.value;
+    const description = taskDescription.value;
+    const assignTo = taskAssignTo.value;
+    const dueDate = taskDueDate.value;
+    const status = taskStatus.value;
+
+    if ( taskName.classList.contains("is-valid") && taskDescription.classList.contains("is-valid") && 
+         taskAssignTo.classList.contains("is-valid") && taskDueDate.classList.contains("is-valid") ) 
+         {
+            // add new task to taskManager.tasks array if form validation successful
+            taskManager.addTask(name, description, assignTo, dueDate, status );
+         }
+
 });
